@@ -8,7 +8,7 @@ from gtts import gTTS
 # ======================
 # CONFIG
 # ======================
-MODEL_PATH = "model/uang_mobilenet_lite.h5"
+MODEL_PATH = "uang_mobilenet_lite.h5"
 CLASS_PATH = "model/class_indices.json"
 UPLOAD_FOLDER = "static/upload"
 AUDIO_FOLDER = "static/audio"
@@ -109,4 +109,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+
 
