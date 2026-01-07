@@ -1,5 +1,5 @@
+gtts
 flask
 tensorflow-cpu
 numpy
-opencv-python-headless
-Pillow
+pillow
