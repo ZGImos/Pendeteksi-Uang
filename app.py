@@ -4,6 +4,7 @@ import numpy as np
 import json, os, time
 from PIL import Image
 from gtts import gTTS
+import os
 
 # ======================
 # CONFIG
@@ -108,4 +109,6 @@ def predict():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Railway akan mengisi variabel environment PORT secara otomatis
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
