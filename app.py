@@ -109,6 +109,6 @@ def predict():
     })
 
 if __name__ == "__main__":
-    # Railway akan mengisi variabel environment PORT secara otomatis
-    port = int(os.environ.get("PORT", 5000))
+    # Railway akan memberikan port lewat environment variable PORT
+    port = int(os.environ.get("PORT", 8080)) 
     app.run(host='0.0.0.0', port=port)
